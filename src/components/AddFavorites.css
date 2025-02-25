@@ -1,0 +1,22 @@
+/* AddFavorites.css */
+.add-favorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-favorites:hover {
+  background: rgba(255, 0, 0, 0.8); /* Slightly red on hover */
+  cursor: pointer;
+}
+
+.add-favorites span {
+  font-size: 14px;
+}

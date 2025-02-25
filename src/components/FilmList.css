@@ -1,0 +1,45 @@
+/* FilmList.css */
+.film-list {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping of images */
+  display: flex; /* Ensure items are displayed in a row */
+}
+
+.row {
+  display: flex; /* Ensures items are in a row */
+  flex-wrap: nowrap; /* Prevents items from wrapping */
+}
+
+/* Film card styles */
+.film-card {
+  position: relative;
+  width: 200px; /* Fixed width for film cards */
+  cursor: pointer;
+  display: inline-block; /* Ensure each film card is inline */
+  margin-right: 16px; /* Space between film cards */
+}
+
+.film-card img {
+  width: 100%; /* Fill the width of the card */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Set a max height to ensure uniformity */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.film-card:hover img {
+  transform: scale(1.05);
+}
+
+.film-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.film-card:hover .film-overlay {
+  opacity: 1;
+}
